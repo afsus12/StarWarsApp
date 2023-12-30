@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:star_wars/Screens/SplashScreen.dart';
+import 'package:star_wars/Controllers/splashScreenController.dart';
+import './Screens/Screens.dart';
 import 'package:get/get.dart';
 import 'package:star_wars/Utilis/myColors.dart';
+
+import 'Screens/MoviesScreen.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -12,7 +15,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+     Get.put(SplashScreenController());
+    return GetMaterialApp(debugShowCheckedModeBanner: false,
       title: 'Star Wars App',
       theme: ThemeData(
        
@@ -20,6 +24,7 @@ class MyApp extends StatelessWidget {
       ),
 routes: {
        "/": (context)=> SplashScreen(),
+       "/Movies":(context)=> MoviesScreen(),
 
 },
     );
