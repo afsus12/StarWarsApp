@@ -10,7 +10,7 @@ class HeaderContent extends StatelessWidget {
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
     return Container(
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         color: MyColors.BlackColor,
         height: screenHeight * 0.25,
         width: screenWidth,
@@ -21,15 +21,15 @@ class HeaderContent extends StatelessWidget {
             Expanded(
               flex: 1,
               child: Center(
-                child: Container(
+                child: SizedBox(
                     width: 150,
                     height: 150,
                     child: Image.asset('assets/images/star_wars.png')),
               ),
             ),
             Text(
-              "Total ${number} Movies",
-              style: TextStyle(color: Colors.white),
+              "Total $number Movies",
+              style: const TextStyle(color: Colors.white),
             )
           ],
         ));

@@ -18,16 +18,17 @@ class SplashScreen extends StatelessWidget {
             Expanded(
               flex: 1,
               child: Center(
-                child: Container(
-                    width: 200,
-                    height: 200,
+                child: SizedBox(
+                    width: 170,
+                    height: 170,
                     child: Image.asset('assets/images/star_wars.png')),
               ),
             ),
             SvgPicture.asset(
               "assets/images/thinkit-logo.svg",
               fit: BoxFit.cover,
-              width: screenWidth * 0.3,
+              width: 128,
+              height: 35,
             ),
           ],
         ),

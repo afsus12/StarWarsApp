@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:star_wars/Controllers/splashScreenController.dart';
 import './Screens/Screens.dart';
 import 'package:get/get.dart';
-import 'package:star_wars/Utilis/myColors.dart';
 
-import 'Screens/MoviesScreen.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -23,8 +21,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
 routes: {
-       "/": (context)=> SplashScreen(),
-       "/Movies":(context)=> MoviesScreen(),
+       "/": (context)=> const SplashScreen(),
+       "/Movies":(context)=> const MoviesScreen(),
 
 },
     );

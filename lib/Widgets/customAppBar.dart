@@ -17,17 +17,17 @@ class CustomAppbar extends StatelessWidget {
               show == true
                   ? IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.arrow_back,
                         size: 30,
                       ))
-                  : SizedBox.shrink(),
+                  : const SizedBox.shrink(),
               Expanded(
                 flex: 1,
                 child: Container(
                   child: Text(
                     title,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontWeight: FontWeight.w500,
                       fontFamily: "Roboto",
                       fontSize: 20,

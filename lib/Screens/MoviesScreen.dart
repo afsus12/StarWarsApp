@@ -12,11 +12,11 @@ class MoviesScreen extends StatelessWidget {
     return Scaffold(
       appBar: PreferredSize(
           preferredSize: Size(screenWidth, 55),
-          child: CustomAppbar(
+          child: const CustomAppbar(
             title: "Think-it Star Wars",
             show: false,
           )),
-      body: Column(
+      body: const Column(
         children: [
           HeaderContent(
             number: 6,
