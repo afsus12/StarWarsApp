@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:star_wars/Utilis/myColors.dart';
+import 'package:get/get.dart';
 
-class HeaderContent extends StatelessWidget {
+class HeaderContentWithImage extends StatelessWidget {
   final int number;
-  const HeaderContent({super.key, required this.number});
+
+  const HeaderContentWithImage({super.key, required this.number});
 
   @override
   Widget build(BuildContext context) {

@@ -1,0 +1,1 @@
+export 'FilmModel.dart';
